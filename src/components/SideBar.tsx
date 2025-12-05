@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import type { CheatSheet } from '../../types';
 import * as Icons from 'lucide-react';
-import { Home, ChevronDown, Search } from 'lucide-react';
+import { Home, Search } from 'lucide-react';
 
 interface SidebarProps {
   cheatSheets: CheatSheet[];

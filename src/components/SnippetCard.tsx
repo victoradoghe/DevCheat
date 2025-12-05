@@ -67,6 +67,17 @@ const SnippetCard: React.FC<SnippetCardProps> = ({
             </span>
           ))}
         </div>
+        <button
+          onClick={() => onToggleFavorite(snippet.id)}
+          className={`p-1.5 rounded-md transition-colors ${
+            isFavorite 
+              ? 'text-yellow-500 hover:text-yellow-600 bg-yellow-50 dark:bg-yellow-900/20' 
+              : 'text-slate-400 hover:text-slate-600 hover:bg-slate-100 dark:hover:bg-slate-700'
+          }`}
+          title={isFavorite ? 'Remove from favorites' : 'Add to favorites'}
+        >
+          <Star size={16} fill={isFavorite ? 'currentColor' : 'none'} />
+        </button>
       </div>
     </div>
   );

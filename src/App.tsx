@@ -1,5 +1,5 @@
-import React, { useState, useEffect, useMemo } from 'react';
-import { Menu, Search, Sun, Moon, Download, ArrowRight, Grid, List } from 'lucide-react';
+import { useState, useEffect } from 'react';
+import { Menu, Search, Sun, Moon, Download, ArrowRight } from 'lucide-react';
 import Sidebar from './components/SideBar';
 import SnippetCard from './components/SnippetCard';
 import { CHEAT_SHEETS } from '../data';
