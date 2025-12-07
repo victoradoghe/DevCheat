@@ -193,7 +193,7 @@ function App() {
       <div className="max-w-6xl mx-auto">
         <div className="mb-8 flex flex-col md:flex-row md:items-center justify-between gap-4">
           <div className="flex items-center gap-4">
-            <div className="w-14 h-14 bg-white dark:bg-slate-800 shadow-sm border border-slate-200 dark:border-slate-700 rounded-2xl flex items-center justify-center text-brand-600 dark:text-brand-400">
+            <div className="w-14 p-2 h-14 bg-white dark:bg-slate-800 shadow-sm border border-slate-200 dark:border-slate-700 rounded-2xl flex items-center justify-center text-brand-600 dark:text-brand-400">
                <IconComponent size={32} />
             </div>
             <div>

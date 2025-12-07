@@ -52,8 +52,7 @@ const SnippetCard: React.FC<SnippetCardProps> = ({
           <button
             onClick={handleCopy}
             className="absolute top-2 right-2 p-1.5 bg-slate-700/80 hover:bg-slate-600 text-white rounded-md opacity-0 group-hover/code:opacity-100 transition-opacity backdrop-blur-sm"
-            title="Copy Code"
-          >
+            title="Copy Code">
             {copied ? <Check size={14} /> : <Copy size={14} />}
           </button>
         </div>
@@ -76,7 +75,6 @@ const SnippetCard: React.FC<SnippetCardProps> = ({
           }`}
           title={isFavorite ? 'Remove from favorites' : 'Add to favorites'}
         >
-          <Star size={16} fill={isFavorite ? 'currentColor' : 'none'} />
         </button>
       </div>
     </div>
