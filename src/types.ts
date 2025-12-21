@@ -1,4 +1,4 @@
-import type { ReactNode } from 'react';
+
 
 export const Difficulty = {
   Beginner: 'Beginner',
