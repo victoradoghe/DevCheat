@@ -19,10 +19,7 @@ function App() {
     return false;
   });
 
-  const [favorites, setFavorites] = useState<Set<string>>(() => {
-    const saved = localStorage.getItem('favorites');
-    return saved ? new Set(JSON.parse(saved)) : new Set();
-  });
+
 
   useEffect(() => {
     if (darkMode) {
@@ -34,18 +31,9 @@ function App() {
     }
   }, [darkMode]);
 
-  useEffect(() => {
-    localStorage.setItem('favorites', JSON.stringify(Array.from(favorites)));
-  }, [favorites]);
 
-  const handleToggleFavorite = (id: string) => {
-    setFavorites(prev => {
-      const newFavs = new Set(prev);
-      if (newFavs.has(id)) newFavs.delete(id);
-      else newFavs.add(id);
-      return newFavs;
-    });
-  };
+
+
 
   const handleExport = () => {
     const activeSheet = CHEAT_SHEETS.find(s => s.id === activeSheetId);
@@ -246,8 +234,6 @@ function App() {
                     <SnippetCard
                       key={snippet.id}
                       snippet={snippet}
-                      isFavorite={favorites.has(snippet.id)}
-                      onToggleFavorite={handleToggleFavorite}
                     />
                   ))}
                 </div>

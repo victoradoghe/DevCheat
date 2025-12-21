@@ -2,18 +2,14 @@ import React, { useState } from 'react';
 import type { Snippet } from '../types';
 import { Difficulty } from '../types';
 import CodeBlock from './CodeBlock';
-import { Copy, Star, Check } from 'lucide-react';
+import { Copy, Check } from 'lucide-react';
 
 interface SnippetCardProps {
   snippet: Snippet;
-  isFavorite: boolean;
-  onToggleFavorite: (id: string) => void;
 }
 
-const SnippetCard: React.FC<SnippetCardProps> = ({ 
-  snippet, 
-  isFavorite, 
-  onToggleFavorite, 
+const SnippetCard: React.FC<SnippetCardProps> = ({
+  snippet,
 }) => {
   const [copied, setCopied] = useState(false);
 
@@ -44,7 +40,7 @@ const SnippetCard: React.FC<SnippetCardProps> = ({
               {snippet.description}
             </p>
           </div>
-          
+
         </div>
 
         <div className="relative group/code mb-4">
