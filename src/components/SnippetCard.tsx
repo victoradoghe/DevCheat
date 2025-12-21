@@ -44,17 +44,7 @@ const SnippetCard: React.FC<SnippetCardProps> = ({
               {snippet.description}
             </p>
           </div>
-          <button
-            onClick={() => onToggleFavorite(snippet.id)}
-            className={`p-2 rounded-lg transition-colors ${
-              isFavorite 
-                ? 'text-yellow-400 hover:bg-yellow-50 dark:hover:bg-yellow-900/20' 
-                : 'text-slate-400 hover:text-slate-600 dark:hover:text-slate-200 hover:bg-slate-100 dark:hover:bg-slate-700'
-            }`}
-            title="Toggle Favorite"
-          >
-            <Star size={18} fill={isFavorite ? "currentColor" : "none"} />
-          </button>
+          
         </div>
 
         <div className="relative group/code mb-4">
