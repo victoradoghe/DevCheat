@@ -278,15 +278,7 @@ function App() {
             >
               {darkMode ? <Sun size={20} /> : <Moon size={20} />}
             </button>
-            <a
-              href="https://github.com"
-              target="_blank"
-              rel="noreferrer"
-              className="hidden sm:flex items-center gap-2 px-3 py-1.5 rounded-full bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 text-xs font-medium hover:bg-slate-200 dark:hover:bg-slate-700 transition-colors"
-            >
-              <Github size={14} />
-              <span>Star on GitHub</span>
-            </a>
+            
           </div>
         </header>
 

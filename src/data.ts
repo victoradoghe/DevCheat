@@ -792,6 +792,76 @@ export const CHEAT_SHEETS: CheatSheet[] = [
     ]
   },
   // =========================================================================
+  // PHP
+  // =========================================================================
+  {
+    id: 'php',
+    name: 'PHP',
+    slug: 'php',
+    iconName: 'Server',
+    type: 'Language',
+    description: 'A popular general-purpose scripting language that is especially suited to web development.',
+    categories: [
+      {
+        id: 'php-basics',
+        title: 'Basics',
+        snippets: [
+          createSnippet('php-tags', 'PHP Tags', 'Standard tags.', '<?php ... ?>', 'php', ['Basics']),
+          createSnippet('php-echo', 'Echo', 'Output string.', 'echo "Hello World";', 'php', ['Basics']),
+          createSnippet('php-vars', 'Variables', 'Prefix with $.', '$txt = "Hello";\n$x = 5;\n$y = 10.5;', 'php', ['Basics']),
+          createSnippet('php-comments', 'Comments', 'Single/Multi line.', '// Single line\n/* Multi-line\ncomment */', 'php', ['Basics']),
+        ]
+      },
+      {
+        id: 'php-strings',
+        title: 'Strings',
+        snippets: [
+          createSnippet('php-strlen', 'String Length', 'Get length.', 'echo strlen("Hello world!");', 'php', ['Strings']),
+          createSnippet('php-str-word-count', 'Word Count', 'Count words.', 'echo str_word_count("Hello world!");', 'php', ['Strings']),
+          createSnippet('php-strrev', 'Reverse String', 'Reverse.', 'echo strrev("Hello world!");', 'php', ['Strings']),
+          createSnippet('php-strpos', 'Search Text', 'Find position.', 'echo strpos("Hello world!", "world");', 'php', ['Strings']),
+          createSnippet('php-str-replace', 'Replace Text', 'Replace substring.', 'echo str_replace("world", "Dolly", "Hello world!");', 'php', ['Strings']),
+        ]
+      },
+      {
+        id: 'php-arrays',
+        title: 'Arrays',
+        snippets: [
+          createSnippet('php-array-indexed', 'Indexed Array', 'Numeric index.', '$cars = array("Volvo", "BMW", "Toyota");', 'php', ['Arrays']),
+          createSnippet('php-array-assoc', 'Associative Array', 'Named keys.', '$age = array("Peter"=>"35", "Ben"=>"37", "Joe"=>"43");', 'php', ['Arrays']),
+          createSnippet('php-count', 'Count', 'Array length.', 'echo count($cars);', 'php', ['Arrays']),
+          createSnippet('php-sort', 'Sort', 'Sort arrays.', 'sort($cars); // Ascending\nrsort($cars); // Descending\nasort($age); // Value ascending\nksort($age); // Key ascending', 'php', ['Arrays']),
+        ]
+      },
+      {
+        id: 'php-loops',
+        title: 'Loops',
+        snippets: [
+          createSnippet('php-foreach', 'Foreach', 'Loop arrays.', 'foreach ($colors as $value) {\n  echo "$value <br>";\n}', 'php', ['Loops']),
+          createSnippet('php-while', 'While', 'Loop condition.', 'while ($x <= 5) {\n  echo "The number is: $x <br>";\n  $x++;\n}', 'php', ['Loops']),
+        ]
+      },
+      {
+        id: 'php-functions',
+        title: 'Functions',
+        snippets: [
+          createSnippet('php-function', 'Function', 'Define function.', 'function writeMsg() {\n  echo "Hello world!";\n}', 'php', ['Functions']),
+          createSnippet('php-function-arg', 'Arguments', 'Pass values.', 'function familyName($fname) {\n  echo "$fname Refsnes.<br>";\n}', 'php', ['Functions']),
+          createSnippet('php-return', 'Return', 'Return value.', 'function sum($x, $y) {\n  $z = $x + $y;\n  return $z;\n}', 'php', ['Functions']),
+        ]
+      },
+      {
+        id: 'php-superglobals',
+        title: 'Superglobals',
+        snippets: [
+          createSnippet('php-post', '$_POST', 'Collect form data.', '$name = $_POST[\'fname\'];', 'php', ['Superglobals']),
+          createSnippet('php-get', '$_GET', 'URL parameters.', 'echo "Study " . $_GET[\'subject\'] . " at " . $_GET[\'web\'];', 'php', ['Superglobals']),
+          createSnippet('php-server', '$_SERVER', 'Headers/Paths.', 'echo $_SERVER[\'SERVER_NAME\'];', 'php', ['Superglobals']),
+        ]
+      }
+    ]
+  },
+  // =========================================================================
   // Git
   // =========================================================================
   {
