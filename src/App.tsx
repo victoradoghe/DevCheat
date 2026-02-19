@@ -1,6 +1,6 @@
 
 import { useState, useEffect } from 'react';
-import { Menu, Search, Sun, Moon, Download, ArrowRight, Github } from 'lucide-react';
+import { Menu, Search, Sun, Moon, Download, ArrowRight } from 'lucide-react';
 import Sidebar from './components/Sidebar';
 import SnippetCard from './components/SnippetCard';
 import { CHEAT_SHEETS } from './data';
@@ -278,7 +278,7 @@ function App() {
             >
               {darkMode ? <Sun size={20} /> : <Moon size={20} />}
             </button>
-            
+
           </div>
         </header>
 
